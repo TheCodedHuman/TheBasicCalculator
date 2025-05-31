@@ -1,0 +1,177 @@
+/*--------------------------------- GLOBAL --------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', 'Segoe UI Symbol', 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg, #BD5E60, #7C73C9);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+
+/*--------------------------------- MisX --------------------------------- */
+
+.give-box-shadow {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+/*--------------------------------- Screen --------------------------------- */
+
+.screen-wrapper {
+    height: 45vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.screen {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ACBAF2;
+    border-radius: 17px;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+
+.circles button {
+    border-radius: 25%;
+    aspect-ratio: 1 / 1;
+    height: 1rem;
+    width: 1rem;
+    background-color: #BD5E60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.6rem;
+}
+
+.screen div div {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #737feb ;
+    font-size: 2.8rem;
+    color: white;
+    padding: 1rem;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+}
+
+.circles {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*---------------- inputTags ----------------*/
+
+.inputs {
+    display: flex;
+    width: 80%;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+}
+
+.inputs input {
+    text-align: right;
+    height: calc(100% / 3);
+    border-radius: 10px;
+    font-size: 4rem;
+    padding-right: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 580;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+.operator {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*--------------------------------- ButtonBase --------------------------------- */
+
+.button-base-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 90vh;
+    background-image: linear-gradient(-45deg, #BD5E60, #7C73C9);
+    border-radius: 17px;
+    border: 4px solid black;
+    padding: 25px 15px;
+}
+
+.button-base {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 2.55rem;
+    color: white;
+    background-color: #7A9AD7;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    border: 1px solid black;
+    font-family: kadwa;
+}
+
+button:active {
+    background-color: #6a88be;
+}
+
+.span-two {
+    grid-row: span 2;
+}
+
+/*--------------------------------- debug --------------------------------- */
+
+* {
+    /* border: 1.5px solid yellow; */
+}
